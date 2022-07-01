@@ -1,0 +1,22 @@
+.iconStyles{
+    font-size: 40px;
+}
+.iconMargin{
+    margin:20px;
+}
+@media (max-width:500px) {
+    .iconStyles{
+        font-size: 30px;
+    }  
+    .iconMargin{
+        margin:10px;
+    }
+}
+@media (max-width:340px) {
+    .iconStyles{
+        font-size: 20px;
+    }  
+    .iconMargin{
+        margin:5px;
+    }
+}
