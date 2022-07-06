@@ -52,6 +52,7 @@ const styles ={
         width:"100%",
         paddingTop:"370px",
         paddingBottom:"15px",
+        paddingX:"15px",
         color:"white",
         display:"flex",
         justifyContent:"center",
@@ -93,7 +94,7 @@ const styles ={
         cursor:"pointer",
         borderRadius:"30px",
         display:"flex",
-        color:"#00970f",
+        color:"#04610d",
         "&:hover":{
             color:"white",
             backgroundColor:"transparent",

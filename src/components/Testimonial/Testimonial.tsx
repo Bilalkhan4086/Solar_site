@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Heading } from 'theme-ui'
-import { Sliderr } from '../Carousel/Slider'
+import { Slider2 } from '../Carousel/Slider2'
 
 const styles={
     smallBox:{
@@ -35,7 +35,7 @@ const styles={
         display:"flex",
         flexDirection:"column",
         margin:"auto",
-        width:"100%",
+        width:"100%"
     },
     subHeading:{
         fontFamily:"Montserrat, sans-serif",
@@ -68,7 +68,7 @@ const Partners = () => {
     <Box sx={{marginBottom:"100px"}}>
         <Box sx={styles.mainBox}>
             <Heading sx={styles.mainHeading}>
-                Our Clients
+                Testimonial
             </Heading>
         </Box>
         <Box sx={{display:"flex",justifyContent:"center",marginBottom:"25px"}}>
@@ -77,10 +77,10 @@ const Partners = () => {
             <Box sx={styles.smallLine2}>.</Box>
         </Box>
         <Heading sx={styles.subHeading}>
-            OUR PARTNERS
+            What our Customer Say
             </Heading>
-            <Box sx={{marginTop:"50px",marginBottom:"50px"}}>
-            <Sliderr/>  
+            <Box sx={{marginBottom:"50px"}}>
+            <Slider2/>  
             </Box>
     </Box>
   )

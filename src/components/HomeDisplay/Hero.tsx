@@ -1,9 +1,21 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image'
 import head from '../../Images/banner_head.jpg'
+import head2 from '../../Images/head2.jpg'
 import { Box, Heading, Text,Button } from 'theme-ui'
 import './styles.css'
 const styles = {
+  mainBox:{
+  marginTop:"-65px",
+  backgroundImage:`url(${head})`,
+  backgroundRepeat:"no-repeat",
+  backgroundSize:"cover",
+  width:"100%",
+  height:"100vh",
+  '@media (max-width:500px )': {
+     backgroundImage:`url(${head2})`
+  }
+},
     mainHeading:{
             fontSize:"60px",
             color:"#002A4C",
@@ -22,6 +34,7 @@ const styles = {
               },
               '@media (max-width:430px ) and (min-width:311px )': {
                 fontSize:"30px",
+
               },
               '@media (max-width:310px ) and (min-width:250px )': {
                 fontSize:"25px",
@@ -115,7 +128,7 @@ headingSeperator:{
 }
 const Hero = () => {
   return (
-   <Box style={{marginTop:"-65px",backgroundImage:`url(${head})`,backgroundRepeat:"no-repeat",backgroundSize:"cover",width:"100%",height:"100vh"}}>
+   <Box sx={styles.mainBox}>
 .<Box sx={styles.subBox}>
 <Box>
 <Heading sx={styles.mainHeading}>

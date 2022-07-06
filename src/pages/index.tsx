@@ -1,10 +1,15 @@
 import React from "react"
+import { Slider2 } from "../components/Carousel/Slider2"
 import ContactUs from "../components/ContactUs/ContactUs"
 import {NavBar} from "../components/Header/Navbar"
 import Hero from "../components/HomeDisplay/Hero"
 import Part2 from "../components/Part2/Part2"
 import Partners from "../components/Partners/Partners"
+import Testimonial from "../components/Testimonial/Testimonial"
 import Services from "../components/Services/Services"
+import Insight from "../components/Insights/Insights"
+import Packages from "../components/Packages/Packages"
+import GetUs from "../components/GetUs/GetUs"
 
 export default function Home() {
   return <div>
@@ -15,7 +20,16 @@ export default function Home() {
    <Hero/>
     <Part2/>
     <Services/>
+    <Insight/>
+    <Testimonial/> 
+    <GetUs/>
+    <Packages/>
 <Partners/>
 <ContactUs/>
   </div>
 }
+/***
+ * calculator
+ * packages
+ * gallery
+ */

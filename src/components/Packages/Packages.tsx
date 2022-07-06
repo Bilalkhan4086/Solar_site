@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Heading } from 'theme-ui'
-import { Sliderr } from '../Carousel/Slider'
+import PackageCards from '../Cards/PackageCards'
 
 const styles={
     smallBox:{
@@ -31,11 +31,14 @@ const styles={
         margin:"auto",
         marginBottom:"16px"
     },
-    mainBox:{
+    mainHeadingBox:{
         display:"flex",
         flexDirection:"column",
         margin:"auto",
-        width:"100%",
+        width:"100%"
+    },
+    mainBox:{
+    marginBottom:"100px"    
     },
     subHeading:{
         fontFamily:"Montserrat, sans-serif",
@@ -63,12 +66,13 @@ const styles={
     }
 }
 
-const Partners = () => {
+const Packages = () => {
+    const benifits = ["10 ceiling fans","20 Energy saver","1 Water Pump","1 Invertor AC","1 Refrigerator"]
   return (
-    <Box sx={{marginBottom:"100px"}}>
-        <Box sx={styles.mainBox}>
+    <Box sx={styles.mainBox}>
+        <Box sx={styles.mainHeadingBox}>
             <Heading sx={styles.mainHeading}>
-                Our Clients
+                Some Packages
             </Heading>
         </Box>
         <Box sx={{display:"flex",justifyContent:"center",marginBottom:"25px"}}>
@@ -77,13 +81,19 @@ const Partners = () => {
             <Box sx={styles.smallLine2}>.</Box>
         </Box>
         <Heading sx={styles.subHeading}>
-            OUR PARTNERS
+            Easy To Afford
             </Heading>
-            <Box sx={{marginTop:"50px",marginBottom:"50px"}}>
-            <Sliderr/>  
-            </Box>
-    </Box>
+             <Box sx={{display:"flex",flexWrap:"wrap",
+        "@media (max-width:1200px)":{
+            flexDirection:"column"
+        }}}>
+             <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
+            <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
+            <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
+   
+             </Box>
+             </Box>
   )
 }
 
-export default Partners
+export default Packages
