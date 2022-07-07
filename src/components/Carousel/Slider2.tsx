@@ -54,7 +54,7 @@ export const Slider2 =()=>{
     ]);
  
 
-    if(ready){
+    if(!ready){
         return(
           <Box>
             Loading ...

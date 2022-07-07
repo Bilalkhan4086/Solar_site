@@ -23,7 +23,7 @@ export const Sliderr =()=>{
         (<img src={five} alt="No" width="100px"/>),
     ]);
 
-    if(ready){
+    if(!ready){
 return(
   <Box>
     Loading ...
