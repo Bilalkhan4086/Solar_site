@@ -11,10 +11,7 @@ const styles = {
   backgroundRepeat:"no-repeat",
   backgroundSize:"cover",
   width:"100%",
-  height:"100vh",
-  '@media (max-width:500px )': {
-     backgroundImage:`url(${head2})`
-  }
+  height:"720px"
 },
     mainHeading:{
             fontSize:"60px",
@@ -45,7 +42,7 @@ const styles = {
           
     },
     subBox:{
-        marginTop:"40vh",
+        marginTop:"300px",
         marginLeft:"50px",
         '@media (max-width:530px )': {
             marginLeft:"30px"
@@ -108,9 +105,15 @@ buttonVariant:{
     width:"170px",
     cursor:"pointer",
     transition: "0.3s",
-    '&:active': {
-      background:"white",
-      color:"#a6dc6d"
+    "&:hover":{
+        color:"#002A4C",
+        background:"transparent",
+        border:"2px solid #002A4C"
+    },
+    "&:active":{
+        color:"#002A4C",
+        background:"transparent",
+        border:"2px solid #002A4C"
     },
      '@media (min-width:1150px )': {
         borderRadius:"30px",

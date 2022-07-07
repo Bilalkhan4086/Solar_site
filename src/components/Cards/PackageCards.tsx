@@ -55,7 +55,17 @@ const styles = {
     margin:"auto",
     width:"90%",
     fontSize:"18px",
-    fontFamily:"MontSerrat,sans-serif"
+    fontFamily:"MontSerrat,sans-serif",
+    "&:hover":{
+        color:"#002A4C",
+        backgroundColor:"transparent",
+        border:"2px solid #002A4C"
+    },
+    "&:active":{
+        color:"#002A4C",
+        backgroundColor:"transparent",
+        border:"2px solid #002A4C"
+    }
 },
 iconStyle:{
 color:"#6abd45",

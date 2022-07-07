@@ -9,20 +9,20 @@ import { Fade } from 'react-reveal'
 
 const styles={
     smallBox:{
-        color:"red",
+        color:"white",
         backgroundColor:"green",
         width:"7px",
         height:"7px"
     },
     smallLine:{
-        color:"red",
+        color:"white",
         backgroundColor:"green",
         width:"40px",
         height:"1px",
         marginTop:"3px"
     },
     smallLine2:{
-        color:"red",
+        color:"white",
         backgroundColor:"green",
         width:"40px",
         height:"1px",
@@ -81,10 +81,16 @@ const styles={
         cursor:"pointer",
         margin:"auto",
         marginY:"30px",
-        '&:active': {
-            background:"white",
-            color:"#a6dc6d"
-          },
+        "&:hover":{
+            color:"#002A4C",
+            background:"transparent",
+            border:"2px solid #002A4C"
+        },
+        "&:active":{
+            color:"#002A4C",
+            background:"transparent",
+            border:"2px solid #002A4C"
+        },
         '@media (min-width:1150px )': {
             borderRadius:"30px",
             height:"50px",

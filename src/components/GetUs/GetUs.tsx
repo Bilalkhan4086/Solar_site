@@ -67,9 +67,11 @@ marginY:"10px"
         width:"150px",
         cursor:"pointer",
         transition: "0.3s",
-        '&:active': {
-          background:"white",
-          color:"#002a4c"
+        "&:hover":{
+            background:"rgba(255,255,255,0.2)"
+        },
+        "&:active":{
+            background:"rgba(255,255,255,0.2)"
         },
         '@media (min-width:1150px )': {
             borderRadius:"30px",

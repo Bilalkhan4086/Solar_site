@@ -88,8 +88,8 @@ const Packages = () => {
             flexDirection:"column"
         }}}>
              <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
+            <PackageCards mainHeading="Gold" Price="540,000" benifits={benifits}/>
+            <PackageCards mainHeading="Premium" Price="840,000" benifits={benifits}/>
    
              </Box>
              </Box>
