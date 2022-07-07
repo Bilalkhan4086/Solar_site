@@ -1,10 +1,10 @@
 import React from 'react'
 import { Box,Heading,Button } from 'theme-ui'
 import Card from '../Cards/Card'
-import icon1 from '../../Images/solar-icon1.png'
-import icon2 from '../../Images/solar-icon2.png'
-import icon3 from '../../Images/solar-icon3.png'
-import icon4 from '../../Images/solar-icon4.png'
+import icon1 from '../../Images/solar-icon1.webp'
+import icon2 from '../../Images/solar-icon2.webp'
+import icon3 from '../../Images/solar-icon3.webp'
+import icon4 from '../../Images/solar-icon4.webp'
 import { Fade } from 'react-reveal'
 
 const styles={

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Box, Button, Heading, Image, Text } from 'theme-ui'
-import  part2image  from '../../Images/part2Img.png'
-import  icon5  from '../../Images/solar-icon5.png'
-import  icon6  from '../../Images/solar-icon6.png'
-import  icon7  from '../../Images/solar-icon7.png'
-import  icon8  from '../../Images/solar-icon8.png'
+import  part2image  from '../../Images/part2Img.webp'
+import  icon5  from '../../Images/solar-icon5.webp'
+import  icon6  from '../../Images/solar-icon6.webp'
+import  icon7  from '../../Images/solar-icon7.webp'
+import  icon8  from '../../Images/solar-icon8.webp'
 
 const styles={
     smallBox:{
@@ -191,7 +191,22 @@ marginRight:"20px",
               }
     },
     leftImage:{
-        width:"90%"
+      width:"500px",
+      '@media (max-width:1150px ) and (min-width:900px )': {
+          width:"860px"
+            },
+            '@media (max-width:899px ) and (min-width:700px )': {
+              width:"660px"
+                },
+                '@media (max-width:699px ) and (min-width:550px )': {
+                  width:"500px"
+                    },
+            '@media (max-width:549px ) and (min-width:300px )': {
+              width:"95%"
+                },
+                '@media (max-width:299px )': {
+                  width:"95%"
+                    }
     }
 }
 

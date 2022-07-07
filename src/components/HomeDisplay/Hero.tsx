@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image'
-import head from '../../Images/banner_head.jpg'
-import head2 from '../../Images/head2.jpg'
+import head from '../../Images/banner_head.webp'
+import head2 from '../../Images/head2.webp'
 import { Box, Heading, Text,Button } from 'theme-ui'
 import './styles.css'
 const styles = {

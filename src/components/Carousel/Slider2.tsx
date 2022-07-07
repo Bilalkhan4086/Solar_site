@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Carousel, { Dots,slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  import one from '../../Images/amazon1.png'
- import two from '../../Images/customer2.jpg'
- import three from '../../Images/customer1.jpg'
+ import two from '../../Images/customer2.webp'
+ import three from '../../Images/customer1.webp'
 import { Card, CardMedia, Typography } from '@material-ui/core';
 import { Rating } from '@mui/material';
 import { Box } from 'theme-ui';

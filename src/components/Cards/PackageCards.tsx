@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, Heading } from 'theme-ui'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import bg from '../../Images/bg.jpg';
+import bg from '../../Images/bg.webp';
 const styles = {
     mainBox:{
         border:"2px solid #002A4C",

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Carousel, { Dots,slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  import one from '../../Images/amazon1.png'
- import two from '../../Images/partner7.png'
- import three from '../../Images/partner2.png'
- import four from '../../Images/partner3.png'
- import five from '../../Images/partner5.png'
- import one from '../../Images/partner6.png'
+ import two from '../../Images/partner7.webp'
+ import three from '../../Images/partner2.webp'
+ import four from '../../Images/partner3.webp'
+ import five from '../../Images/partner5.webp'
+ import one from '../../Images/partner6.webp'
 import { Box } from 'theme-ui';
 
 export const Sliderr =()=>{

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Heading, Image } from 'theme-ui'
-import bgI from '../../Images/card-back.jpg'
+import bgI from '../../Images/card-back.webp'
 const styles={
     iconImage:{
 width:"100px",
