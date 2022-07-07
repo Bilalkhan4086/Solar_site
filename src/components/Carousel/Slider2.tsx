@@ -56,9 +56,22 @@ export const Slider2 =()=>{
 
     if(!ready){
         return(
-          <Box>
-            Loading ...
-          </Box>
+            <Card elevation={0} style={{padding:"20px 40px" ,maxWidth: "90%",display:"flex",flexDirection:"column",justifyContent:"center",margin:"auto" }}>
+            <CardMedia
+            image={three}
+            component="img"
+        style={{width:"100px",height:"100px",margin:"auto",marginBottom:"20px",borderRadius:"100px",boxShadow:"4px 4px 0 0px #6abd45"}}
+        alt="Image not Loaded"
+            />
+            <Typography variant="h6" style={{color:"#002A4C",fontFamily:"Montserrat, sans-serif",fontWeight:600,textAlign:"center",justifyContent:"center",margin:"auto"}}>
+            Rachel Smith
+            </Typography>
+            <Rating style={{margin:"20px auto",color:"#6abd45"}} value={5}/>
+            <Typography variant="body1" style={{color:"#002A4C",fontFamily:"Montserrat, sans-serif",textAlign:"center",justifyContent:"center",margin:"auto"}}>
+                {data[1]}
+            </Typography>
+    
+        </Card>
         )
             }
 

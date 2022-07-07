@@ -25,8 +25,12 @@ export const Sliderr =()=>{
 
     if(!ready){
 return(
-  <Box>
-    Loading ...
+  <Box sx={{marginTop:"50px",marginBottom:"200px",display:"flex","@media (max-width:640px)":{overFlow:"hidden"}}}>
+    <img src={one} alt="No" width="100px"/>
+        <img src={two} alt="yes" width="100px"/>
+        <img src={three} alt="No" width="100px"/>
+      <img src={four} alt="yes" width="100px"/>
+      <img src={five} alt="No" width="100px"/>
   </Box>
 )
     }
