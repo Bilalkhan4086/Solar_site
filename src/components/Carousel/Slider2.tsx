@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel, { Dots,slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  import one from '../../Images/amazon1.png'
@@ -6,8 +6,13 @@ import '@brainhubeu/react-carousel/lib/style.css';
  import three from '../../Images/customer1.jpg'
 import { Card, CardMedia, Typography } from '@material-ui/core';
 import { Rating } from '@mui/material';
+import { Box } from 'theme-ui';
 
 export const Slider2 =()=>{
+    const [ready,setReady] = useState(false);
+  useEffect(() => {
+    setReady(true);
+  }, [])
     const [dots,setDots] = useState(0);
     const [data,setData] = useState([
         'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Lorem Ipsum as their default model text.',
@@ -48,6 +53,16 @@ export const Slider2 =()=>{
     </Card>)
     ]);
  
+
+    if(ready){
+        return(
+          <Box>
+            Loading ...
+          </Box>
+        )
+            }
+
+
     return (
         <>
         <Carousel style={{marginTop:"50px",marginBottom:"200px"}}

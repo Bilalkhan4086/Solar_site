@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel, { Dots,slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  import one from '../../Images/amazon1.png'
@@ -7,8 +7,14 @@ import '@brainhubeu/react-carousel/lib/style.css';
  import four from '../../Images/partner3.png'
  import five from '../../Images/partner5.png'
  import one from '../../Images/partner6.png'
+import { Box } from 'theme-ui';
 
 export const Sliderr =()=>{
+  const [ready,setReady] = useState(false);
+  useEffect(() => {
+    setReady(true);
+  }, [])
+  
     const [sildes,setSlides] = useState([
         (<img src={one} alt="No" width="100px"/>),
         (<img src={two} alt="yes" width="100px"/>),
@@ -16,6 +22,14 @@ export const Sliderr =()=>{
         (<img src={four} alt="yes" width="100px"/>),
         (<img src={five} alt="No" width="100px"/>),
     ]);
+
+    if(ready){
+return(
+  <Box>
+    Loading ...
+  </Box>
+)
+    }
 
     return (
         <Carousel style={{marginTop:"50px",marginBottom:"200px"}}
