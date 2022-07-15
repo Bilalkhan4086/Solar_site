@@ -6,12 +6,12 @@ import { Box, Heading, Text,Button } from 'theme-ui'
 import './styles.css'
 const styles = {
   mainBox:{
-  marginTop:"-65px",
+  // marginTop:"-65px",
   backgroundImage:`url(${head})`,
   backgroundRepeat:"no-repeat",
   backgroundSize:"cover",
   width:"100%",
-  height:"720px"
+  height:"590px"
 },
     mainHeading:{
             fontSize:"60px",
@@ -42,7 +42,7 @@ const styles = {
           
     },
     subBox:{
-        marginTop:"300px",
+        marginTop:"200px",
         marginLeft:"50px",
         '@media (max-width:530px )': {
             marginLeft:"30px"
@@ -109,7 +109,7 @@ buttonVariant:{
         color:"#002A4C",
         background:"transparent",
         border:"2px solid #002A4C"
-    },
+      },
     "&:active":{
         color:"#002A4C",
         background:"transparent",

@@ -1,5 +1,4 @@
 import React from "react"
-import { Slider2 } from "../components/Carousel/Slider2"
 import ContactUs from "../components/ContactUs/ContactUs"
 import {NavBar} from "../components/Header/Navbar"
 import Hero from "../components/HomeDisplay/Hero"
@@ -10,26 +9,23 @@ import Services from "../components/Services/Services"
 import Insight from "../components/Insights/Insights"
 import Packages from "../components/Packages/Packages"
 import GetUs from "../components/GetUs/GetUs"
+import { Box } from "theme-ui"
 
 export default function Home() {
-  return <div>
+  return <Box>
     <><link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin/>
-<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/></>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</>
      <NavBar/>
    <Hero/>
     <Part2/>
     <Services/>
     <Insight/>
-    <Testimonial/> 
+    <Testimonial/>
     <GetUs/>
     <Packages/>
 <Partners/>
 <ContactUs/>
-  </div>
+  </Box>
 }
-/***
- * calculator
- * packages
- * gallery
- */

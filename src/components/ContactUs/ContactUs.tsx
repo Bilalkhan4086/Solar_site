@@ -93,6 +93,7 @@ const styles ={
         height:"45px",
         cursor:"pointer",
         borderRadius:"30px",
+        marginX:"8px",
         display:"flex",
         color:"#04610d",
         "&:hover":{
@@ -136,20 +137,28 @@ const styles ={
         '@media (max-width : 970px)':{
             width:"80%",
             } ,
-            '@media (max-width : 400px)':{
-                fontSize:"25px"
+            '@media (max-width : 340px)':{
+                fontSize:"20px",
+                width:"90%"
                 } 
+                // ,
+                // '@media (max-width : 400px)':{
+                //     fontSize:"25px"
+                //     } 
     },
     LocationAndContact:{
         fontSize:"16px",
         fontFamily:"Montserrat,sans-serif",
         '@media (max-width : 350px)':{
-            fontSize:"12px",
+            fontSize:"10px",
             }
     },
     smallCallHeading:{
         fontSize:"25px",
-        fontFamily:"Montserrat,sans-serif"
+        fontFamily:"Montserrat,sans-serif", 
+        '@media (max-width : 340px)':{
+            fontSize:"18px",
+            } 
     },
     NumberHeading:{
         fontSize:"40px",
@@ -164,7 +173,7 @@ const styles ={
                     fontSize:"20px",
                     } , 
                     '@media (max-width : 340px)':{
-                        fontSize:"17px",
+                        fontSize:"13px",
                         } 
     },
     contactDetails:{
@@ -241,13 +250,13 @@ It is a long established fact that a reader will be distracted by the readable c
             {/* <Box sx={styles.contactDetails}> */}
             
             <Heading sx={styles.LocationAndContact}>
-                <span  className='iconMargin'><LocationOnIcon/></span>Wapda Mangla Colony, Wapda office, Pakistan
+                <span  className='iconMargin'><LocationOnIcon  className="iconStyles2"/></span>Wapda Mangla Colony, Wapda office, Pakistan
             </Heading>
             <Heading sx={styles.LocationAndContact}>
-            <span  className='iconMargin'><PublicIcon/></span>www.NetMetering.com
+            <span  className='iconMargin'><PublicIcon  className="iconStyles2"/></span>www.NetMetering.com
             </Heading>
             <Heading sx={styles.LocationAndContact}>
-            <span  className='iconMargin'><EmailIcon/></span>WebDeveloper.Bilal@gmail.com
+            <span  className='iconMargin'><EmailIcon  className="iconStyles2"/></span>WebDeveloper.Bilal@gmail.com
             </Heading>
             
 <Box sx={styles.callBox}>
