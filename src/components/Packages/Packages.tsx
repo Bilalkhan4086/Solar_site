@@ -87,9 +87,9 @@ const Packages = () => {
         "@media (max-width:1200px)":{
             flexDirection:"column"
         }}}>
-             <PackageCards mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards mainHeading="Premium" Price="840,000" benifits={benifits}/>
+             <PackageCards MP={true} mainHeading="Basic" Price="340,000" benifits={benifits}/>
+            <PackageCards MP={true} mainHeading="Gold" Price="540,000" benifits={benifits}/>
+            <PackageCards MP={true} mainHeading="Premium" Price="840,000" benifits={benifits}/>
    
              </Box>
              </Box>

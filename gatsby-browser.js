@@ -1,0 +1,1 @@
+export {wrapRootElement} from './src/components/Layout/wrap-root-element'

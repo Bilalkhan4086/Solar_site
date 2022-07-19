@@ -17,7 +17,6 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin/>
 <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </>
-     <NavBar/>
    <Hero/>
     <Part2/>
     <Services/>
@@ -26,6 +25,5 @@ export default function Home() {
     <GetUs/>
     <Packages/>
 <Partners/>
-<ContactUs/>
   </Box>
 }

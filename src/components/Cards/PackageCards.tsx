@@ -5,13 +5,12 @@ import bg from '../../Images/bg.webp';
 const styles = {
     mainBox:{
         border:"2px solid #002A4C",
-        width:"400px", 
+        width:"370px", 
         height:"600px",
         borderRadius:"5px",
         display:"flex",
         flexDirection:"column",
         justifyContent:"center",
-        backgroundImage:`url(${bg})`,
         margin:"30px auto",
         "@media (max-width:1200px)":{
             width:"70%"
@@ -21,6 +20,28 @@ const styles = {
         },
         "@media (max-width:420px)":{
             width:"95%"
+        },
+        "&:hover":{
+            backgroundColor:"rgba(170,170,170,0.2)"
+        }
+    }, mainBox2:{
+        border:"2px solid #002A4C",
+        width:"370px", 
+        height:"600px",
+        borderRadius:"5px",
+        display:"flex",
+        flexDirection:"column",
+        justifyContent:"center",
+        margin:"30px auto",
+        transition:"background-color 0.5s ease",
+        "@media (max-width:550px)":{
+            width:"90%"
+        },
+        "@media (max-width:420px)":{
+            width:"95%"
+        },
+        "&:hover":{
+            backgroundColor:"rgba(120,120,120,0.2)"
         }
     },
     mainHeading:{
@@ -56,10 +77,11 @@ const styles = {
     width:"90%",
     fontSize:"18px",
     fontFamily:"MontSerrat,sans-serif",
+    transition:"0.5s",
     "&:hover":{
         color:"#002A4C",
         backgroundColor:"transparent",
-        border:"2px solid #002A4C"
+        border:"1px solid #002A4C"
     },
     "&:active":{
         color:"#002A4C",
@@ -76,9 +98,9 @@ display:"flex",
 marginY:"20px"
 }
 }
-const PackageCards = ({mainHeading,Price,benifits}) => {
+const PackageCards = ({mainHeading,Price,benifits,MP}) => {
   return (
-    <Box sx={styles.mainBox}>
+    <Box sx={MP ? styles.mainBox : styles.mainBox2}>
 <Heading sx={styles.mainHeading}>
 {mainHeading}
 </Heading>
