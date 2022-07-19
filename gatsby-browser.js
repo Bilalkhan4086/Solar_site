@@ -1,1 +1,1 @@
-export {wrapRootElement} from './src/components/Layout/wrap-root-element'
+export {wrapRootElement} from './src/components/layout/wrap-root-element'
