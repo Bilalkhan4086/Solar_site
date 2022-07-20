@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Button, Heading } from 'theme-ui'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import bg from '../../Images/bg.webp';
+import { navigate } from 'gatsby';
 const styles = {
     mainBox:{
         border:"2px solid #002A4C",
@@ -117,7 +118,7 @@ Benifits
 )}
  </ul>
 </Box>
-<Button sx={styles.buttonStyle}>
+<Button sx={styles.buttonStyle} onClick={()=>{navigate("/packages_details")}}>
     Explore More
 </Button>
 

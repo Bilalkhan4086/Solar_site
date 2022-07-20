@@ -6,7 +6,7 @@ import "./styles.css"
 
 export const NavBar = () =>{
   return(
-    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(90deg, rgba(12,77,129,0.7287289915966386) 32%, rgba(12,77,129,0.7315301120448179) 77%)"}} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(36deg, rgba(5,50,76,1) 14%, rgba(106,189,69,1) 100%)"}} variant="dark">
   <Container>
   <Navbar.Brand href="#home" style={{fontWeight:"bolder"}}><span className='logoColor'>SOL</span><span className='logoColor2'>ARIC</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,10 +15,10 @@ export const NavBar = () =>{
       
     </Nav>
     <Nav style={{fontWeight:"bolder"}} >
-    <Nav.Link href="#featuress" style={{color:"white",fontSize:"20px"}}>Home</Nav.Link>
-      <Nav.Link href="#deets" style={{color:"white",fontSize:"20px"}}>Packages</Nav.Link>
-      <Nav.Link href="#memes" style={{color:"white",fontSize:"20px"}}>Solar Calculator</Nav.Link>
-      <Nav.Link href="#memes" style={{color:"white",fontSize:"20px"}}>Services</Nav.Link>
+    <Nav.Link href="/" style={{color:"white",fontSize:"20px"}}>Home</Nav.Link>
+      <Nav.Link href="/packages" style={{color:"white",fontSize:"20px"}}>Packages</Nav.Link>
+      <Nav.Link href="/calculator" style={{color:"white",fontSize:"20px"}}>Solar Calculator</Nav.Link>
+      <Nav.Link href="/#" style={{color:"white",fontSize:"20px"}}>Services</Nav.Link>
       {/* <Nav.Link href="#memes" style={{color:"white"}}>Contact</Nav.Link> */}
       <NavDropdown title={
         <span style={{color:"white",fontSize:"20px"}}> 
@@ -28,8 +28,6 @@ export const NavBar = () =>{
         <NavDropdown.Item  href="#action/3.1">About</NavDropdown.Item>
         <NavDropdown.Item  href="#action/3.2">Team</NavDropdown.Item>
         <NavDropdown.Item  href="#action/3.3">Gallery</NavDropdown.Item>
-        <NavDropdown.Divider/>
-        <NavDropdown.Item style={{color:"white"}} href="#action/3.4">Portfolio</NavDropdown.Item>
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>

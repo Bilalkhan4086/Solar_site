@@ -7,7 +7,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Rating , Typography } from '@mui/material'
 import packageImg from "../Images/packages.webp"
 
-const hotel_detalis = () => {
+const hotel_detalis = ({PackageName,badgeLabel,Ratings,Description,PackageHighlights,PackageOffer,PrimaryDetail1,PrimaryDetail2}) => {
   const styles = {
     container: {
       marginX: "10%",
@@ -165,7 +165,7 @@ const hotel_detalis = () => {
   const highlights = ["Highligh flexible schedules ", "Isn’t that the dream now", "schedules and elite team members", "High flexible schedules", "flexible schedules", "High elite team members"]
   const offers = ["Highligh flexible schedules ", "Isn’t that the dream now", "schedules and elite team members", "High flexible schedules", "flexible schedules", "High elite team members"]
   const mealPlans = ["I that the dream now", "schedules and elite team members"]
-
+  let PackageOffers = ["flexible schedules and elite team members! (Isnt that the dream now?)","flexible schedules and elite team members! (Isnt that the dream now?)",'* valid till 30 April 2022']
   return (
     <Box sx={styles.container}>
 
@@ -184,21 +184,21 @@ const hotel_detalis = () => {
         <Box>
         <Box style={{ display: "flex",justifyContent:"space-between" }}>
           <Box>
-            <Typography style={styles.mainHeading}  >{"GRAND MARQUEE TOWN"}</Typography>
+            <Typography style={styles.mainHeading}  >{PackageName === undefined ? "GRAND MARQUEE TOWN":PackageName.toUpperCase()}</Typography>
             <Box style={{ marginTop: "7px" }}>
-              <Badge bg="danger">Premium</Badge>
+              <Badge bg="danger">{badgeLabel === undefined ? "Premium":badgeLabel}</Badge>
             </Box>
           </Box>
   <Button sx={styles.buttonVariant}>
    <AddShoppingCartIcon sx={{color:"smoke-white"}}/> Add to cart
   </Button>
           </Box>
-          <Typography style={styles.description}  >{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}</Typography>
+          <Typography style={styles.description}  >{Description === undefined ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." : Description}</Typography>
           <Heading  sx={{fontSize:"18px",color:"#002A4C",fontWeight:800}}>
-  Rating <span style={{color:"#4039b1"}}>4</span> out of <span style={{color:"#4039b1"}}>5</span>
+  Rating <span style={{color:"#4039b1"}}>{Ratings === undefined ? 4:Ratings}</span> out of <span style={{color:"#4039b1"}}>5</span>
 </Heading>
           <Box sx={{display:"flex"}}>
-          <Rating style={{color:"#e0c700"}} value={4}/>
+          <Rating style={{color:"#e0c700"}} value={Ratings === undefined ? 4:Ratings}/>
 </Box>
         </Box>
        
@@ -228,7 +228,16 @@ const hotel_detalis = () => {
             </Typography>
 
             <Box sx={styles.PrimaryHeadlightBox}>
-              {highlights.map((highlight, i) => (
+              {PackageHighlights === undefined ? highlights.map((highlight, i) => (
+                <Typography style={styles.textDiv} key={i} variant='body2'>
+                  <Box style={{ display: "flex", justifyContent: "space-between" }}>
+                    <CheckCircle />
+                    <Box style={{ width: "160px" }}>
+                      {highlight}
+                    </Box>
+                  </Box>
+                </Typography>
+              )) : PackageHighlights.map((highlight, i) => (
                 <Typography style={styles.textDiv} key={i} variant='body2'>
                   <Box style={{ display: "flex", justifyContent: "space-between" }}>
                     <CheckCircle />
@@ -250,36 +259,28 @@ const hotel_detalis = () => {
 
             <Box sx={styles.PrimaryHeadlightBox}>
 
-            <Typography style={styles.textDiv} variant='body2'>
-                <Box style={{ display: "flex", justifyContent: "space-between" }}>
-                  <CheckCircle />
-                  <Box style={{ width: "160px" }}>
-                    flexible schedules and elite team members! (Isnt that the dream now?)
+             { PackageOffer === undefined ? PackageOffers.map((highlight, i) => (
+                <Typography style={styles.textDiv} key={i} variant='body2'>
+                  <Box style={{ display: "flex", justifyContent: "space-between" }}>
+                    <CheckCircle />
+                    <Box style={{ width: "160px" }}>
+                      {highlight}
+                    </Box>
                   </Box>
-                </Box>
-              </Typography>
-              <Typography style={styles.textDiv} variant='body2'>
-                <Box style={{ display: "flex", justifyContent: "space-between" }}>
-                  <CheckCircle />
-                  <Box style={{ width: "160px" }}>
-                    flexible schedules and elite team members! (Isnt that the dream now?)
+                </Typography>
+              )) : PackageOffer.map((highlight, i) => (
+                <Typography style={styles.textDiv} key={i} variant='body2'>
+                  <Box style={{ display: "flex", justifyContent: "space-between" }}>
+                    <CheckCircle />
+                    <Box style={{ width: "160px" }}>
+                      {highlight}
+                    </Box>
                   </Box>
-                </Box>
-              </Typography>
+                </Typography>
+              ))}
+              
 
-              <Typography style={styles.textDiv} variant='body2'>
-                <Box style={{ display: "flex", justifyContent: "space-between" }}>
-                  <CalendarTodayOutlined />
-                  <Box style={{ width: "160px" }}>
-                    {Date()}
-                  </Box>
-                </Box>
-              </Typography>
-
-              <Typography style={styles.textDivExtended} variant='body2'>
-                * valid till 30 April 2022
-              </Typography>
-
+             
             </Box>
 
           </Box>
@@ -297,7 +298,7 @@ const hotel_detalis = () => {
             Perchase Includes
           </Typography>
         </Box>
-        {
+        {PrimaryDetail1 === undefined ?
           offers.map((offer) => (<Typography style={{ margin: "20px",fontFamily:"Montserrat,sans-serif"  }} variant='body2'>
             <Box style={{ display: "flex" }}>
               <CheckCircle />
@@ -306,7 +307,17 @@ const hotel_detalis = () => {
               </Box>
             </Box>
           </Typography>
-          ))}
+          )) : 
+          PrimaryDetail1.map((offer) => (<Typography style={{ margin: "20px",fontFamily:"Montserrat,sans-serif"  }} variant='body2'>
+            <Box style={{ display: "flex" }}>
+              <CheckCircle />
+              <Box style={{ marginLeft: "20px",fontFamily:"Montserrat,sans-serif" }}>
+                {offer}
+              </Box>
+            </Box>
+          </Typography>
+          ))
+          }
 
       </Box>
       <Box>
@@ -314,7 +325,7 @@ const hotel_detalis = () => {
           Meal plans available
         </Typography>
       </Box>
-      {
+      {PrimaryDetail2 === undefined ? 
         mealPlans.map((meal) => (
           <Typography style={{ margin: "20px",fontFamily:"Montserrat,sans-serif" }} variant='body2'>
             <Box style={{ display: "flex" }}>
@@ -324,7 +335,16 @@ const hotel_detalis = () => {
               </Box>
             </Box>
           </Typography>
-        ))
+        )):
+        PrimaryDetail2.map((meal) => (
+          <Typography style={{ margin: "20px",fontFamily:"Montserrat,sans-serif" }} variant='body2'>
+            <Box style={{ display: "flex" }}>
+              <CheckCircle />
+              <Box style={{ marginLeft: "20px",fontFamily:"Montserrat,sans-serif" }}>
+                {meal}
+              </Box>
+            </Box>
+          </Typography>))
       }
 
     </Box>
