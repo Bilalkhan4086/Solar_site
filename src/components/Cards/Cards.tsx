@@ -6,8 +6,9 @@ import { Box } from 'theme-ui'
 
 const Cards = () => {
   return (
-<Box style={{width:"300px",padding:"20px",color:"whitesmoke",backgroundColor:"#080130",borderRadius:"20px",textAlign:"center"}}>
-<Box style={{display:"flex",justifyContent:"space-between"}}>
+<Box style={{width:"500px",padding:"20px",color:"whitesmoke",backgroundColor:"#080130",borderRadius:"20px",textAlign:"center"}}>
+<Box style={{display:"flex",justifyContent:"space-between",
+      fontFamily:"Montserrat,sans-serif"}}>
         {/* left */}
         <Box>
         <Box>
