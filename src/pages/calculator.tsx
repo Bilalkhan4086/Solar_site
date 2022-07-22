@@ -70,9 +70,9 @@ const calculator = ()=>{
         <Box sx={styles.smallLine2}>.</Box>
       </Box>
       {loaded ? 
+        <Calculator/>: 
       <Text sx={{fontFamily:"Montserrat,sans-serif",fontSize:"20px"}}>Loading...</Text>
-      :
-        <Calculator/>
+    
       }
 </Box>
     )
