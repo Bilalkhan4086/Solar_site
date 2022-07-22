@@ -18,7 +18,7 @@ export const NavBar = () =>{
     <Nav.Link href="/" style={{color:"white",fontSize:"20px"}}>Home</Nav.Link>
       <Nav.Link href="/packages" style={{color:"white",fontSize:"20px"}}>Packages</Nav.Link>
       <Nav.Link href="/calculator" style={{color:"white",fontSize:"20px"}}>Solar Calculator</Nav.Link>
-      <Nav.Link href="/#" style={{color:"white",fontSize:"20px"}}>Services</Nav.Link>
+      <Nav.Link href="/services" style={{color:"white",fontSize:"20px"}}>Services</Nav.Link>
       {/* <Nav.Link href="#memes" style={{color:"white"}}>Contact</Nav.Link> */}
       <NavDropdown title={
         <span style={{color:"white",fontSize:"20px"}}> 
