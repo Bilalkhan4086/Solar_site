@@ -73,8 +73,8 @@ const Calculator = () => {
   ])
   const [Units, setUnits] = useState<number>(0)
   const [KWatts, setKWatts] = useState<number>(0)
-const penalSizes = [];
-
+  const [size, setSize] = useState<number>(370)
+const panelSizes:number[] = [250, 255, 260, 265, 270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400];
 
   const checkIt = (Items: ItemProps[]) => {
            
@@ -104,7 +104,7 @@ const penalSizes = [];
   }
 
   useEffect(() => {
-    console.log(".")
+    console.log("Items :", Items)
   }, [Items, Item])
   return (
     <Box sx={{"@media(max-width : 500px)":{overflow:"scroll"}}} >
@@ -126,7 +126,7 @@ const penalSizes = [];
                     Item
                   </InputLabel>
                   <NativeSelect
-                    defaultValue={`${Item}`}
+                    defaultValue={Item}
                     onChange={e => {
                       setItem({
                         ...Item,
@@ -158,8 +158,10 @@ const penalSizes = [];
                   id="standard-basic"
                   type="number"
                   onChange={e => {
-                    setItem({ ...Item, ...{ Watts: parseInt(e.target.value) } })
-                    Items[i].Watts = parseInt(e.target.value)
+                    if(Items.length === i){
+                      setItem({ ...Item, ...{ Watts: parseInt(e.target.value) } })
+                    }else{Items[i].Watts = parseInt(e.target.value)}
+                    
                   }}
                   label="Watts"
                   variant="standard"
@@ -170,8 +172,10 @@ const penalSizes = [];
                   id="standard-basic"
                   type="number"
                   onChange={e => {
+                    if(Items.length === i){
                     setItem({ ...Item, ...{ Hours: parseInt(e.target.value) } })
-                    Items[i].Hours = parseInt(e.target.value)
+                    }else{Items[i].Hours = parseInt(e.target.value)}
+                    
                   }}
                   label="Hours"
                   variant="standard"
@@ -182,11 +186,11 @@ const penalSizes = [];
                   id="standard-basic"
                   type="number"
                   onChange={e => {
-                    setItem({
+                    if(Items.length === i){setItem({
                       ...Item,
                       ...{ Quantity: parseInt(e.target.value) },
-                    })
-                    Items[i].Quantity = parseInt(e.target.value)
+                    })}else{Items[i].Quantity = parseInt(e.target.value)}
+                    
                   }}
                   label="Quantity"
                   variant="standard"
@@ -199,9 +203,8 @@ const penalSizes = [];
       <Button
         sx={{ bg: "green" ,...styles.buttonStyle}}
         onClick={() => {
-          setItems([...Items, Item])
           setItem({ Item: 0, Watts: 0, Hours: 0, Quantity: 0 })
-          console.log("Items :", Items)
+          setItems([...Items, Item])
         }}
       >
         Add Item
@@ -239,17 +242,15 @@ const penalSizes = [];
                     Solar Panel Size
                   </InputLabel>
                   <NativeSelect
-                    defaultValue={`${Item}`}
+                    defaultValue={size}
                     onChange={e => {
-                      setItem({
-                        ...Item,
-                        ...{ Item: parseInt(e.target.value) },
-                      })
+                      setSize(parseInt(e.target.value))
                     }}
                   >
-                  {
-                    <option value={0}>370</option>
-                  }
+                  {panelSizes.map((size,i)=>
+                    (
+                    <option key={i} value={size}>{size} Watts</option>
+                  ))}
                   </NativeSelect>
                 </FormControl>
             </th>
@@ -267,7 +268,7 @@ const penalSizes = [];
               {(Units*1.5)} kw
             </td>
             <td>
-              {Math.ceil(Units/0.37)}
+              {Math.ceil(Units/(size/1000))}
             </td>
             
           </tr>
