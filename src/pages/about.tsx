@@ -390,7 +390,7 @@ const about = () => {
 
 
   <Box sx={styles.mainBox2}>
-  <Heading sx={styles.mainHeading}>
+  <Heading id="Team" sx={styles.mainHeading}>
             Our Experts
         </Heading>
         <Box sx={{display:"flex",justifyContent:"center",marginBottom:"25px"}}>
