@@ -25,7 +25,7 @@ export const NavBar = () =>{
         </span>
       } className="#nav-dropdown" id="collasible-nav-dropdown">
         <NavDropdown.Item  href="/about">About</NavDropdown.Item>
-        <NavDropdown.Item  href="about/#Team">Team</NavDropdown.Item>
+        <NavDropdown.Item  href="/about#Team">Team</NavDropdown.Item>
         <NavDropdown.Item  href="/gallery">Gallery</NavDropdown.Item>
       </NavDropdown>
     </Nav>
