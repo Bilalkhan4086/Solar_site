@@ -75,9 +75,6 @@ const Calculator = () => {
   const [KWatts, setKWatts] = useState<number>(0)
 const penalSizes = [];
 
-for(let i = 200;i <= 400; i+5){
-console.log(i)
-}
 
   const checkIt = (Items: ItemProps[]) => {
            
