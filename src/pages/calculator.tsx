@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {Box, Heading, Text} from 'theme-ui';
+import {Box, Heading, Text, Spinner} from 'theme-ui';
 import Calculator from '../components/Calculator/Calculator';
 
 const calculator = ()=>{
@@ -71,7 +71,9 @@ const calculator = ()=>{
       </Box>
       {loaded ? 
         <Calculator/>: 
-      <Text sx={{fontFamily:"Montserrat,sans-serif",fontSize:"20px"}}>Loading...</Text>
+      <Box sx={{display:"flex",margin:"auto",justifyContent:"center"}}>
+      <Spinner/>  
+      </Box>
     
       }
 </Box>
