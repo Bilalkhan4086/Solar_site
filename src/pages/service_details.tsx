@@ -17,7 +17,7 @@ interface secondHNTType{
 interface detailPropsType {
   headingMain : String
   mainDesc : String
-  mainImage : String
+  mainImage : any
   secondHeading : String
   secondHNT : secondHNTType[]
   thirdHeading : String

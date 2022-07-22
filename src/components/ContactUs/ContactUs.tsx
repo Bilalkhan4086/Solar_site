@@ -20,7 +20,7 @@ const styles ={
     },
     smallestBox:{
         width:"90%",
-        height:"100px",
+        height:"50px",
         background:"linear-gradient(to right, #002a4c, #6abd45)",
         transform:"skew(360deg,2deg)",
         marginBottom:"-30px",

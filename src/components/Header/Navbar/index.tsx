@@ -6,7 +6,7 @@ import "./styles.css"
 
 export const NavBar = () =>{
   return(
-    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(36deg, rgba(5,50,76,1) 14%, rgba(106,189,69,1) 100%)"}} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(90deg, rgba(5,50,76,1) 14%, rgba(106,189,69,1) 100%)"}} variant="dark">
   <Container>
   <Navbar.Brand href="#home" style={{fontWeight:"bolder"}}><span className='logoColor'>SOL</span><span className='logoColor2'>ARIC</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
