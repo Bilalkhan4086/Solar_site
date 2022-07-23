@@ -206,10 +206,13 @@ const styles ={
         }
             
 }
+
+
 const ContactUs = () => { 
 const links = [{name:"whatsapp",link:"/#"},{name:"google",link:"/#"},{name:"twitter",link:"/#"},{name:"facebook",link:"/#"},{name:"instagram",link:"/#"}]
     return (
-    <Box>
+<Box>
+    
         <Box sx={styles.contentBox}>
         <Box sx={styles.smallestBox}>.</Box>
         <Box sx={styles.medBox}>
