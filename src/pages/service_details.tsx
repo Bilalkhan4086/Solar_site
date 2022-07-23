@@ -1,12 +1,6 @@
 import React from "react"
 import { Box, Button, Heading, Image, Text } from "theme-ui"
-import Card from "../components/Cards/Card"
-import icon1 from "../Images/solar-icon1.webp"
-import icon2 from "../Images/solar-icon2.webp"
-import icon3 from "../Images/solar-icon3.webp"
-import icon4 from "../Images/solar-icon4.webp"
 import { navigate } from "gatsby"
-import heroImg from '../Images/Hybrid-Solar-System-in-Pakistan.webp'
 import Slide from 'react-reveal/Slide';
 
 interface secondHNTType{

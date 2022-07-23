@@ -6,7 +6,7 @@ import "./styles.css"
 
 export const NavBar = () =>{
   return(
-    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(36deg, rgba(5,50,76,1) 14%, rgba(106,189,69,1) 100%)"}} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{background: "linear-gradient(90deg, rgba(5,50,76,1) 14%, rgba(106,189,69,1) 100%)"}} variant="dark">
   <Container>
   <Navbar.Brand href="#home" style={{fontWeight:"bolder"}}><span className='logoColor'>SOL</span><span className='logoColor2'>ARIC</span></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -14,20 +14,19 @@ export const NavBar = () =>{
     <Nav className="me-auto">
       
     </Nav>
-    <Nav style={{fontWeight:"bolder"}} >
-    <Nav.Link href="/" style={{color:"white",fontSize:"20px"}}>Home</Nav.Link>
-      <Nav.Link href="/packages" style={{color:"white",fontSize:"20px"}}>Packages</Nav.Link>
-      <Nav.Link href="/calculator" style={{color:"white",fontSize:"20px"}}>Solar Calculator</Nav.Link>
-      <Nav.Link href="/#" style={{color:"white",fontSize:"20px"}}>Services</Nav.Link>
-      {/* <Nav.Link href="#memes" style={{color:"white"}}>Contact</Nav.Link> */}
+    <Nav>
+    <Nav.Link href="/" style={{color:"white",fontSize:"16px"}}>Home</Nav.Link>
+      <Nav.Link href="/packages" style={{color:"white",fontSize:"16px"}}>Packages</Nav.Link>
+      <Nav.Link href="/calculator" style={{color:"white",fontSize:"16px"}}>Solar Calculator</Nav.Link>
+      <Nav.Link href="/services" style={{color:"white",fontSize:"16px"}}>Services</Nav.Link>
       <NavDropdown title={
-        <span style={{color:"white",fontSize:"20px"}}> 
+        <span style={{color:"white",fontSize:"16px"}}> 
           About
         </span>
       } className="#nav-dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item  href="#action/3.1">About</NavDropdown.Item>
-        <NavDropdown.Item  href="#action/3.2">Team</NavDropdown.Item>
-        <NavDropdown.Item  href="#action/3.3">Gallery</NavDropdown.Item>
+        <NavDropdown.Item  href="/about">About</NavDropdown.Item>
+        <NavDropdown.Item  href="/about#Team">Team</NavDropdown.Item>
+        <NavDropdown.Item  href="/gallery">Gallery</NavDropdown.Item>
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>

@@ -1,5 +1,5 @@
-import React from 'react';
-import {Box, Heading} from 'theme-ui';
+import React, { useEffect, useState } from 'react';
+import {Box, Heading, Text, Spinner} from 'theme-ui';
 import Calculator from '../components/Calculator/Calculator';
 
 const calculator = ()=>{
@@ -52,6 +52,11 @@ const calculator = ()=>{
             marginX: "10px",
           },
         }}
+        const [loaded,setloaded] = useState(false);
+        useEffect(() => {
+          setloaded(true);
+        }, [loaded])
+        
     return(
         <Box sx={styles.mainBox}>
       <Box sx={styles.mainHeadingBox}>
@@ -64,7 +69,13 @@ const calculator = ()=>{
         <Box sx={styles.smallBox}>.</Box>
         <Box sx={styles.smallLine2}>.</Box>
       </Box>
-      <Calculator/>
+      {loaded ? 
+        <Calculator/>: 
+      <Box sx={{display:"flex",margin:"auto",justifyContent:"center"}}>
+      <Spinner/>  
+      </Box>
+    
+      }
 </Box>
     )
 }
