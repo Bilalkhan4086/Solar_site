@@ -1,5 +1,5 @@
 import React from 'react'
-import {navigate} from 'gatsby'
+import {navigate,Link} from 'gatsby'
 import { Box, Heading } from 'theme-ui'
 import FontAwesome from "react-fontawesome"
 import faStyles from 'font-awesome/css/font-awesome.css'
@@ -184,7 +184,11 @@ const styles ={
     callBox:{
         display:"flex",
         flexDirection:"column",
-        justifyContent:"space-around"   
+        justifyContent:"space-around" ,
+        cursor:"pointer",
+        '&:hover':{
+            color:"#002A4C"
+        }  
     },
     iconBox:{
         width:"350px",
@@ -228,11 +232,10 @@ It is a long established fact that a reader will be distracted by the readable c
 
 {/* {
     links.map((link)=>( */}
-        <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}>  <WhatsApp style={{margin:"auto",fontSize:"25px"}} /></Box>
+        <Box sx={styles.iconContainer} onClick={()=>{navigate("https://wa.me/923448884086?text=I'm%20interested%20in%20your%20services%20let%20me%20know%20more")}}>  <WhatsApp style={{margin:"auto",fontSize:"25px"}} /></Box>
         <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Twitter style={{margin:"auto",fontSize:"25px"}} /></Box>
         <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Instagram style={{margin:"auto",fontSize:"25px"}} /></Box>
         <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Facebook style={{margin:"auto",fontSize:"25px"}} /></Box>
-        <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}> <Google style={{margin:"auto",fontSize:"25px"}} /></Box>
 
 
 
@@ -259,7 +262,9 @@ It is a long established fact that a reader will be distracted by the readable c
             <span  className='iconMargin'><EmailIcon  className="iconStyles2"/></span>WebDeveloper.Bilal@gmail.com
             </Heading>
             
-<Box sx={styles.callBox}>
+<Box sx={styles.callBox} onClick={()=>{
+    navigate("tel:+923448884086")
+}}>
     <Heading sx={styles.smallCallHeading}>
         Call Now
     </Heading>
