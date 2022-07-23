@@ -6,6 +6,7 @@ import icon2 from '../../Images/solar-icon2.webp'
 import icon3 from '../../Images/solar-icon3.webp'
 import icon4 from '../../Images/solar-icon4.webp'
 import { Fade } from 'react-reveal'
+import { navigate } from 'gatsby'
 
 const styles={
     smallBox:{
@@ -132,7 +133,9 @@ const Services = () => {
             <Card icon={icon3} heading={"Best Component Selection"} description={"It is a long established fact that a reader will be distracted"}/>
             <Card icon={icon4} heading={"Solar Net-Mettering"} description={"It is a long established fact that a reader will be distracted"}/>
             </Box>
-            <Button sx={styles.buttonStyle} >
+            <Button sx={styles.buttonStyle} onClick={()=>{
+    navigate("/services")
+}}>
                     Explore More
             </Button>
     </Box>

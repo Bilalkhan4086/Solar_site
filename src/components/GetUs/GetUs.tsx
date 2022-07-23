@@ -1,3 +1,4 @@
+import { navigate } from 'gatsby'
 import React from 'react'
 import { Box, Button, Heading, Image, Text } from 'theme-ui'
 import  part2image  from '../../Images/part2Img.webp'
@@ -143,7 +144,9 @@ const GetUs = () => {
     {/* Right */}
 <Box sx={styles.RightSide}>
      
-      <Button sx={styles.buttonReadMore}>
+      <Button sx={styles.buttonReadMore} onClick={()=>{
+    navigate("https://wa.me/923448884086?text=I'm%20interested%20in%20your%20services%20let%20me%20know%20more")
+}}>
       Contact Us  
       </Button> 
     

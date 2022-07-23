@@ -236,9 +236,9 @@ It is a long established fact that a reader will be distracted by the readable c
 {/* {
     links.map((link)=>( */}
         <Box sx={styles.iconContainer} onClick={()=>{navigate("https://wa.me/923448884086?text=I'm%20interested%20in%20your%20services%20let%20me%20know%20more")}}>  <WhatsApp style={{margin:"auto",fontSize:"25px"}} /></Box>
-        <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Twitter style={{margin:"auto",fontSize:"25px"}} /></Box>
-        <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Instagram style={{margin:"auto",fontSize:"25px"}} /></Box>
-        <Box sx={styles.iconContainer} onClick={()=>{navigate("/#")}}><Facebook style={{margin:"auto",fontSize:"25px"}} /></Box>
+        <Box sx={styles.iconContainer} onClick={()=>{navigate("https://www.instagram.com/muhammadbilal3681/")}}><Twitter style={{margin:"auto",fontSize:"25px"}} /></Box>
+        <Box sx={styles.iconContainer} onClick={()=>{navigate("https://www.instagram.com/premierpakistan")}}><Instagram style={{margin:"auto",fontSize:"25px"}} /></Box>
+        <Box sx={styles.iconContainer} onClick={()=>{navigate("https://www.facebook.com/profile.php?id=100012243097496")}}><Facebook style={{margin:"auto",fontSize:"25px"}} /></Box>
 
 
 

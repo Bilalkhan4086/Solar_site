@@ -4,6 +4,7 @@ import head from '../../Images/banner_head.webp'
 import head2 from '../../Images/head2.webp'
 import { Box, Heading, Text,Button } from 'theme-ui'
 import './styles.css'
+import { navigate } from 'gatsby'
 const styles = {
   mainBox:{
   // marginTop:"-65px",
@@ -148,7 +149,7 @@ Experience The Power Of The Sun At Its Finest
     </Heading>
 </Box>
 <Box>
-    <Button variant='secondary' sx={styles.buttonVariant}>Contact Now</Button>
+    <Button variant='secondary' sx={styles.buttonVariant} onClick={()=>{navigate("tel:+923448884086")}}>Contact Now</Button>
 </Box>
 </Box>
    </Box>

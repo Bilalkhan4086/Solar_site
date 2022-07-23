@@ -1,3 +1,4 @@
+import { navigate } from 'gatsby'
 import React from 'react'
 import { Box, Button, Heading, Image, Text } from 'theme-ui'
 import part2image from '../../Images/part2Img.webp'
@@ -236,7 +237,7 @@ const Part2 = () => {
           <Image src={part2image} sx={styles.leftImage} alt="Image is not Loaded due to connection" />
         </Box>
         <Box>
-          <Button sx={styles.buttonReadMore}>
+          <Button sx={styles.buttonReadMore} onClick={()=>{navigate("/service_details")}}>
             Read More
           </Button>
         </Box>

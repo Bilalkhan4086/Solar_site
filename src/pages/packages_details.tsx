@@ -6,6 +6,7 @@ import { CalendarTodayOutlined, CheckCircle } from "@mui/icons-material"
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Rating , Typography } from '@mui/material'
 import packageImg from "../Images/packages.webp"
+import { navigate } from 'gatsby'
 
 const hotel_detalis = ({PackageName,badgeLabel,Ratings,Description,PackageHighlights,PackageOffer,PrimaryDetail1,PrimaryDetail2}) => {
   const styles = {
@@ -189,8 +190,8 @@ const hotel_detalis = ({PackageName,badgeLabel,Ratings,Description,PackageHighli
               <Badge bg="danger">{badgeLabel === undefined ? "Premium":badgeLabel}</Badge>
             </Box>
           </Box>
-  <Button sx={styles.buttonVariant}>
-   <AddShoppingCartIcon sx={{color:"smoke-white"}}/> Add to cart
+  <Button sx={styles.buttonVariant} onClick={()=>{navigate("https://wa.me/923448884086?text=I'm%20interested%20in%20your%20services%20let%20me%20know%20more")}}>
+   <AddShoppingCartIcon sx={{color:"smoke-white"}}/> Book Now
   </Button>
           </Box>
           <Typography style={styles.description}  >{Description === undefined ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." : Description}</Typography>
