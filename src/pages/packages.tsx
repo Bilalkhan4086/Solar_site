@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Heading } from 'theme-ui'
 import PackageCards from '../components/Cards/PackageCards'
-
+import packImg from '../Images/head2.webp'
 const packages = () => {
     const benifits = ["10 ceiling fans","20 Energy saver","1 Water Pump","1 Invertor AC","1 Refrigerator"]
     const styles={
@@ -87,18 +87,21 @@ const packages = () => {
         </Box>
 
        <Box sx={{display:"flex",flexWrap:"wrap"}}>
-             <PackageCards MP={false} mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Premium" Price="840,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Premium" Price="840,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Premium" Price="840,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards MP={false} mainHeading="Premium" Price="840,000" benifits={benifits}/>
+       <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
    
              </Box>
 </Box>

@@ -23,8 +23,7 @@ height:"102px"
         backgroundSize:"cover",
         fontFamily:"Montserrat, sans-serif",
         display:"flex",
-        margin:"20px",
-        marginLeft:"10px",
+        margin:"auto",
         flexDirection:"column",
         borderBottom: '3px solid #549a3e',
           transition:"0.3s",
@@ -39,7 +38,7 @@ height:"102px"
             padding:"20px"
               },
               '@media (max-width:1177px ) and (min-width:820px)': {
-                width:"40%",
+                width:"90%",
                 height:"300px",
                 padding:"20px"
                   },
@@ -57,10 +56,12 @@ height:"102px"
 
 const Card = ({icon,heading,description}) => {
   return (
-        <Box sx={styles.CardBox}>
+        <Box sx={{margin:"auto",padding:"20px"}}>
+          <Box sx={styles.CardBox}>
         <Image src={icon} sx={{width:"100px",height:"102px",marginX:"auto"}} alt="no Loaded"/>
         <Heading sx={styles.CardHeading}>{heading}</Heading>
         <Heading sx={{margin:"auto",fontWeight:400,fontSize:"17px",fontFamily:"Montserrat, sans-serif",justifyContent:"center",textAlign:"center"}}>{description}</Heading>
+        </Box>
         </Box>
   )
 }

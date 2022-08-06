@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Heading } from 'theme-ui'
 import PackageCards from '../Cards/PackageCards'
+import packImg from '../../Images/head2.webp'
 
 const styles={
     smallBox:{
@@ -38,7 +39,7 @@ const styles={
         width:"100%"
     },
     mainBox:{
-    marginBottom:"100px"    
+    marginBottom:"50px"    
     },
     subHeading:{
         fontFamily:"Montserrat, sans-serif",
@@ -83,13 +84,10 @@ const Packages = () => {
         <Heading sx={styles.subHeading}>
             Easy To Afford
             </Heading>
-             <Box sx={{display:"flex",flexWrap:"wrap",
-        "@media (max-width:1200px)":{
-            flexDirection:"column"
-        }}}>
-             <PackageCards MP={true} mainHeading="Basic" Price="340,000" benifits={benifits}/>
-            <PackageCards MP={true} mainHeading="Gold" Price="540,000" benifits={benifits}/>
-            <PackageCards MP={true} mainHeading="Premium" Price="840,000" benifits={benifits}/>
+             <Box sx={{display:"flex",flexWrap:"wrap",width:"95%",margin:"auto" }}>
+             <PackageCards  image={packImg} mainHeading="Basic Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Gold Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
+            <PackageCards  image={packImg} mainHeading="Premium Solar" location={"Pakistan"} details={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."} link={"/packages_details"}/>
    
              </Box>
              </Box>

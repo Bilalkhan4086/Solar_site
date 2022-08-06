@@ -152,6 +152,7 @@ const panelSizes:number[] = [250, 255, 260, 265, 270, 275, 280, 285, 290, 295, 3
                     <option value={17}>Split AC</option>
                     <option value={18}>Inverter AC</option>
                     <option value={19}>Microwave</option>
+                    <option value={20}>Others</option>
                   </NativeSelect>
                 </FormControl>
               </td>

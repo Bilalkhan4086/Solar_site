@@ -131,7 +131,7 @@ const styles = {
     fontFamily: "Montserrat, sans-serif",
     display: "flex",
     margin: "20px",
-    marginLeft: "10px",
+    marginX: "10px",
     flexDirection: "column",
     '&:hover': {
       backgroundColor: '#549a3e',
@@ -176,7 +176,7 @@ const styles = {
     margin: "auto",
     flexWrap: "wrap",
     width: "550px",
-    marginRight: "20px",
+    marginX: "20px",
     '@media (max-width:1150px)': {
       width: "90%",
       margin: "auto",

@@ -44,8 +44,8 @@ const services = () => {
       width: "100%",
     },
     mainBox: {
-      marginX: "40px",
-      marginY: "40px",
+      marginX: "3px",
+      marginY: "30px",
       "@media (max-width:450px )": {
         marginX: "10px",
       },
@@ -80,7 +80,7 @@ const services = () => {
         justifyContent: "center",
       },
       cardBox: {
-        cursor:"pointer"
+        cursor:"pointer",
       },
   }
 
@@ -175,6 +175,32 @@ const services = () => {
           }
         />
       </Box>
+      <Box sx={styles.cardBox}
+          onClick={() => {
+            navigate("/service_details")
+          }}
+        >
+          <Card
+            icon={icon3}
+            heading={"Best Component Selection"}
+            description={
+              "It is a long established fact that a reader will be distracted"
+            }
+          />
+        </Box>
+        <Box sx={styles.cardBox}
+          onClick={() => {
+            navigate("/service_details")
+          }}
+        >
+        <Card
+          icon={icon4}
+          heading={"Solar Net-Mettering"}
+          description={
+            "It is a long established fact that a reader will be distracted"
+          }
+        />
+        </Box>
     </Box>
     </Box>
   )

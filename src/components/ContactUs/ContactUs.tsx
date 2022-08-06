@@ -93,7 +93,7 @@ const styles ={
         height:"45px",
         cursor:"pointer",
         borderRadius:"30px",
-        marginX:"8px",
+        marginX:"4px",
         display:"flex",
         color:"#04610d",
         "&:hover":{
